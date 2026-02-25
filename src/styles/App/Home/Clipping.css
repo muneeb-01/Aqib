@@ -1,0 +1,8 @@
+:root {
+  --clip: 100%;
+  --clipReact: 0%;
+  --clipReactRound: 0px;
+}
+.clipContainer {
+  clip-path: circle(var(--clip) at 50% 45%);
+}

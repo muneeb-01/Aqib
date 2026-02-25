@@ -1,0 +1,67 @@
+@theme {
+    /* --- Elegant Monochrome Palette --- */
+    --color-elegant-50:  #ffffff;
+    --color-elegant-100: #ffffff;
+    --color-elegant-200: #ffffff;
+    --color-elegant-300: #ffffff;
+    --color-elegant-400: #ffffff;
+    --color-elegant-500: #ffffff;
+    --color-elegant-600: #ffffff;
+    --color-elegant-700: #ffffff;
+    --color-elegant-800: #2B2B2B;  /* #ffffff */
+    --color-elegant-900: #000000;
+    --color-elegant-950: #000000;
+}
+
+@layer base {
+    /* ========== LIGHT THEME ========== */
+    .theme-elegant {
+        --color-primary: var(--color-elegant-800);
+        --color-primary-fg: var(--color-elegant-100);
+
+        --color-secondary: var(--color-elegant-600);
+        --color-secondary-fg: var(--color-elegant-50);
+
+        --color-tertiary: var(--color-elegant-200);
+        --color-tertiary-fg: var(--color-elegant-700);
+
+        --color-paper: var(--color-elegant-50);
+        --color-paper-hover: var(--color-elegant-200);
+        --color-paper-fg: var(--color-elegant-800);
+        --color-paper-heading: var(--color-elegant-900);
+
+        --color-hover: var(--color-secondary);
+        --color-focus: var(--color-secondary);
+        --color-disabled: var(--color-paper);
+        --color-disabled-border: var(--color-tertiary-fg);
+
+        /* Button gradient for light mode */
+        --color-btn-gradient-from: var(--color-elegant-400);
+        --color-btn-gradient-to: var(--color-elegant-700);
+
+         /* Text selection color (light mode) */
+        --color-selection-bg: var(--color-elegant-300);
+        --color-selection-fg: var(--color-elegant-950);
+    }
+
+    /* ========== DARK THEME ========== */
+    .theme-elegant.dark {
+        --color-tertiary: var(--color-elegant-800);
+        --color-tertiary-fg: var(--color-elegant-200);
+
+        --color-paper: var(--color-elegant-950);
+        --color-paper-fg: var(--color-elegant-50);
+        --color-paper-heading: var(--color-elegant-100);
+
+        --color-disabled: var(--color-paper);
+        --color-disabled-border: var(--color-tertiary-fg);
+
+        --color-selection-bg: var(--color-elegant-400);
+        --color-selection-fg: var(--color-elegant-950);
+    }
+}
+
+.theme-elegant ::selection {
+        background: var(--color-selection-bg);
+        color: var(--color-selection-fg);
+    }

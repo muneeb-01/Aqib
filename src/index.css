@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "montbold";
+  src: url("./assets/Fonts/NeueMontrealBold.woff2");
+}
+@font-face {
+  font-family: "montmedium";
+  src: url("./assets/Fonts/NordMedium.woff2");
+}
+@font-face {
+  font-family: "montregular";
+  src: url("./assets/Fonts/NordRegular.woff2");
+}
+
+@import "./styles/themes/elegant.css";
+@import "./styles/App/Home/Clipping.css";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-montbold: "montbold", sans-serif;
+    --font-montmedium: "montmedium", sans-serif;
+    --font-montregular: "montregular", sans-serif;
+    --color-info: var(--color-blue-600);
+    --color-info-fg: var(--color-blue-200);
+    --color-error: var(--color-red-600);
+    --color-error-fg: var(--color-red-200);
+    --color-success: var(--color-green-600);
+    --color-success-fg: var(--color-green-200);
+    --color-warning: var(--color-yellow-600);
+    --color-warning-fg: var(--color-yellow-200);
+    --container-roundness: clamp(2em, 5vw, 10em);
+  }
+  :root.dark {
+    --color-warning: var(--color-yellow-400);
+  }
+
+  body {
+    @apply font-light bg-[var(--color-paper-fg)] text-[var(--color-paper)] transition-all duration-500;
+  }
+}
+
+@layer components {
+  .error {
+    @apply text-[var(--color-error)] text-xs;
+  }
+  .success {
+    @apply text-[var(--color-success)] text-xs;
+  }
+  .warning {
+    @apply text-[var(--color-warning)] text-xs;
+  }
+}
+.font-montbold {
+  font-family: var(--font-montbold);
+  @apply font-bold;
+}
+
+button .no-select {
+  @apply select-none;
+}
+
+html,
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
