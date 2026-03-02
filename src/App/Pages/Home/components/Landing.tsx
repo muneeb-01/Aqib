@@ -24,7 +24,7 @@ export function Landing() {
         ".clipContainer",
         {
           "--clip": "0%",
-          ease: "power2",
+          ease: "cubic-bezier(0.19, 1, 0.22, 1)",
         },
         "a",
       )

@@ -1,2 +1,6 @@
 export {Landing} from "./Landing"
 export {Marquee} from "./Expanding"
+export {Offer} from "./Offer"
+export {ScrollScaleCardWrapper} from "./ScrollScaleCard"
+export {Testimonial} from "./Testimonials"
+export {Cta} from "./Cta"

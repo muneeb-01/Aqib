@@ -1,53 +1,84 @@
-import { Button } from "./Button"
-
 export function Footer() {
   return (
-    <footer className="pt-[11em] px-4">
-      <div className="border rounded-t-[var(--container-roundness)] border-b-0 px-8 pt-[5em]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-[3em]  mx-auto">
-          <div className="px-6 py-4 text-center rounded flex items-start">
-            <h2 className="craftr3 font-extrabold text-6xl tracking-tight text-left py-3">
-              Our Services and <br /> directions
-            </h2>
-          </div>
-          <div className="px-6 py-4 text-center rounded flex items-end">
-            <p className="craftr3 font-light text-[var(--color-secondary)] text-left">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque magni at pariatur,
-              <br /> eum vero repudiandae aliquid eligendi, a architecto dolore
-              rem reprehenderit ipsam <br /> tempore blanditiis incidunt amet
-              excepturi. Harum, quibusdam!
-            </p>
-          </div>
-          <div className="col-span-full my-4 h-px bg-[var(--color-secondary)]"></div>
-        </div>
+    <footer className="bg-(--color-paper) font-neue-machina flex justify-center items-center text-(--color-paper-fg) rounded-t-(--container-roundness) pt-24 pb-8">
+      {/* Top Grid */}
+      <div className="max-w-[1500px]">
+      <div className="container mx-auto   px-6 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-16 mb-16">
+        {/* Brand */}
         <div>
-          <div className=" py-[14em]">
-            <h2 className="craftr3 text-center font-extrabold text-6xl tracking-tight py-3">
-              Tell me about your next project
-            </h2>
-            <div className="flex flex-wrap justify-center items-center gap-[clamp(0.3rem,1vw,0.75rem)] mt-[clamp(0.5rem,1vw,1rem)] text-center">
-              <Button name="About Us" />
-              <Button name="Contact Us" />
-            </div>
-          </div>
-
-          <div className="col-span-full h-px bg-[var(--color-secondary)]"></div>
+          <a href="#" className="text-2xl font-semibold">
+            Nexus<span className="">.</span>
+          </a>
+          <p className="mt-4 max-w-[250px] ">
+            High-end digital solutions for modern brands.
+          </p>
         </div>
 
-        <div className="py-6 flex justify-between text-[0.7em] sm:text-[1em] items-center">
-          <div>
-            <p>
-              © 2025{" "}
-              <a href="https://craftr-studio.vercel.app/">Craftr Studio</a>
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row sm:gap-4">
-            <p>Facebook</p>
-            <p>LinkedIn</p>
-            <p>Instagram</p>
+        {/* Agency Links */}
+        <div>
+          <h5 className="text-lg font-semibold mb-6">Agency</h5>
+          <div className="space-y-4">
+            <a href="#" className="block transition">
+              About Us
+            </a>
+            <a href="#" className="block transition">
+              Services
+            </a>
+            <a href="#" className="block transition">
+              Careers
+            </a>
           </div>
         </div>
+
+        {/* Resources Links */}
+        <div>
+          <h5 className="text-lg font-semibold mb-6">Resources</h5>
+          <div className="space-y-4">
+            <a href="#" className="block transition">
+              Case Studies
+            </a>
+            <a href="#" className="block transition">
+              Blog
+            </a>
+            <a href="#" className="block transition">
+              Process
+            </a>
+          </div>
+        </div>
+
+        {/* Newsletter */}
+        <div>
+          <h5 className="text-lg font-semibold mb-6">Stay Updated</h5>
+          <form className="flex flex-col sm:flex-row gap-2 mt-4">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              required
+              className="flex-1 px-6 py-3 rounded-full  border focus:outline-none focus:shadow-[0_0_10px_rgba(149,255,0,0.2)] transition"
+            />
+            <button
+              type="submit"
+              className="px-6 py-3 rounded-full bg-(--color-paper-fg) text-(--color-paper)   font-medium hover:opacity-90 transition"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      {/* Bottom Section */}
+      <div className="container mx-auto px-6 pt-8 border-t border-[var(--surface-border)] flex flex-col md:flex-row justify-between items-center text-sm  gap-4">
+        <p>&copy; 2026 Nexus Digital. All rights reserved.</p>
+
+        <div className="flex gap-8">
+          <a href="#" className="hover:text-[var(--text-primary)] transition">
+            Privacy Policy
+          </a>
+          <a href="#" className="hover:text-[var(--text-primary)] transition">
+            Terms of Service
+          </a>
+        </div>
+      </div>
       </div>
     </footer>
   )

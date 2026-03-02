@@ -51,7 +51,7 @@ export function Marquee() {
     <div
       ref={sectionRef}
       data-color="white"
-      className="marqueeContainer absolute top-0 section no-select w-full h-screen overflow-hidden"
+      className="marqueeContainer font-neue-machina absolute top-0 section no-select w-full h-screen overflow-hidden"
     >
       {/* Top Tagline */}
       <div className="text-center font-poppins mt-20 sm:mt-24">

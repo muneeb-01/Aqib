@@ -11,16 +11,22 @@
   font-family: "montregular";
   src: url("./assets/Fonts/NordRegular.woff2");
 }
+@font-face {
+  font-family: "NeueMachina";
+  src: url("./assets/Fonts/NeueMachina.ttf");
+}
 
 @import "./styles/themes/elegant.css";
 @import "./styles/App/Home/Clipping.css";
-@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant dark
+  (&: where(.dark, .dark *));
 
 @layer base {
   :root {
     --font-montbold: "montbold", sans-serif;
     --font-montmedium: "montmedium", sans-serif;
     --font-montregular: "montregular", sans-serif;
+    --font-neue-machina: "NeueMachina", sans-serif;
     --color-info: var(--color-blue-600);
     --color-info-fg: var(--color-blue-200);
     --color-error: var(--color-red-600);
@@ -29,7 +35,7 @@
     --color-success-fg: var(--color-green-200);
     --color-warning: var(--color-yellow-600);
     --color-warning-fg: var(--color-yellow-200);
-    --container-roundness: clamp(2em, 5vw, 10em);
+    --container-roundness: clamp(2em, 5vw, 1em);
   }
   :root.dark {
     --color-warning: var(--color-yellow-400);
@@ -55,11 +61,29 @@
   font-family: var(--font-montbold);
   @apply font-bold;
 }
+.font-montmedium {
+  font-family: var(--font-montmedium);
+  @apply font-medium;
+}
+.font-montregular {
+  font-family: var(--font-montregular);
+  @apply font-normal;
+}
+.font-neue-machina {
+  font-family: var(--font-neue-machina);
+  @apply font-normal;
+}
 
 button .no-select {
   @apply select-none;
 }
 
+p {
+  font-family: var(--font-montregular);
+}
+button {
+  font-family: var(--font-neue-machina);
+}
 html,
 body {
   scrollbar-width: none; /* Firefox */

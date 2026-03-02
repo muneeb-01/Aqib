@@ -65,11 +65,13 @@ export function Marquee() {
           },
           {
             x: endX,
+            ease: "cubic-bezier(0.165, 0.84, 0.44, 1)",
             scrollTrigger: {
               trigger: container,
               start: "top bottom", // Start when the container hits the bottom of the viewport
               end: "bottom top", // End when the container exits the top of the viewport
               scrub: 1.5,
+              
             },
           },
         )
