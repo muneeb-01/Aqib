@@ -1,67 +1,90 @@
 @theme {
-    /* --- Elegant Monochrome Palette --- */
-    --color-elegant-50:  #ffffff;
-    --color-elegant-100: #ffffff;
-    --color-elegant-200: #ffffff;
-    --color-elegant-300: #ffffff;
-    --color-elegant-400: #ffffff;
-    --color-elegant-500: #ffffff;
-    --color-elegant-600: #ffffff;
-    --color-elegant-700: #ffffff;
-    --color-elegant-800: #2B2B2B;  /* #ffffff */
-    --color-elegant-900: #000000;
-    --color-elegant-950: #000000;
+    /* --- Elegant Stone & Charcoal Palette --- */
+    --color-elegant-50:  #F8F7F4;  /* Pearl */
+    --color-elegant-100: #EFECE6;  /* Alabaster */
+    --color-elegant-200: #DFDBD2;  /* Light Stone */
+    --color-elegant-300: #C8C2B7;  /* Stone */
+    --color-elegant-400: #A8A196;  /* Taupe */
+    --color-elegant-500: #8C8477;  /* Warm Grey */
+    --color-elegant-600: #70695E;  /* Deep Warm Grey */
+    --color-elegant-700: #57524A;  /* Ash */
+    --color-elegant-800: #3E3B36;  /* Charcoal */
+    --color-elegant-900: #262422;  /* Deep Charcoal */
+    --color-elegant-950: #141312;  /* Obsidian */
 }
 
 @layer base {
     /* ========== LIGHT THEME ========== */
     .theme-elegant {
-        --color-primary: var(--color-elegant-800);
-        --color-primary-fg: var(--color-elegant-100);
+        /* Primary (Buttons, accents) - Deep Charcoal */
+        --color-primary: var(--color-elegant-900);
+        --color-primary-fg: var(--color-elegant-50);
 
-        --color-secondary: var(--color-elegant-600);
-        --color-secondary-fg: var(--color-elegant-50);
+        /* Secondary - Soft Alabaster background elements */
+        --color-secondary: var(--color-elegant-100);
+        --color-secondary-fg: var(--color-elegant-900);
 
+        /* Tertiary - Delicate accents */
         --color-tertiary: var(--color-elegant-200);
-        --color-tertiary-fg: var(--color-elegant-700);
+        --color-tertiary-fg: var(--color-elegant-800);
 
+        /* Main Page Background & Text */
         --color-paper: var(--color-elegant-50);
-        --color-paper-hover: var(--color-elegant-200);
+        --color-paper-hover: var(--color-elegant-100);
         --color-paper-fg: var(--color-elegant-800);
-        --color-paper-heading: var(--color-elegant-900);
+        --color-paper-heading: var(--color-elegant-950);
 
-        --color-hover: var(--color-secondary);
-        --color-focus: var(--color-secondary);
-        --color-disabled: var(--color-paper);
-        --color-disabled-border: var(--color-tertiary-fg);
+        /* Interactive states */
+        --color-hover: var(--color-elegant-200);
+        --color-focus: var(--color-elegant-900);
+        --color-disabled: var(--color-elegant-100);
+        --color-disabled-border: var(--color-elegant-300);
 
-        /* Button gradient for light mode */
-        --color-btn-gradient-from: var(--color-elegant-400);
-        --color-btn-gradient-to: var(--color-elegant-700);
+        /* Button gradient for an elegant touch */
+        --color-btn-gradient-from: var(--color-elegant-800);
+        --color-btn-gradient-to: var(--color-elegant-950);
 
-         /* Text selection color (light mode) */
-        --color-selection-bg: var(--color-elegant-300);
-        --color-selection-fg: var(--color-elegant-950);
+         /* Text selection color */
+        --color-selection-bg: var(--color-elegant-900);
+        --color-selection-fg: var(--color-elegant-50);
     }
 
     /* ========== DARK THEME ========== */
     .theme-elegant.dark {
-        --color-tertiary: var(--color-elegant-800);
+        /* Primary - Pearl/Stone */
+        --color-primary: var(--color-elegant-50);
+        --color-primary-fg: var(--color-elegant-900);
+
+        /* Secondary - Deep Charcoal backgrounds */
+        --color-secondary: var(--color-elegant-800);
+        --color-secondary-fg: var(--color-elegant-50);
+
+        /* Tertiary - Slight elevation */
+        --color-tertiary: var(--color-elegant-900);
         --color-tertiary-fg: var(--color-elegant-200);
 
+        /* Main Page Background & Text */
         --color-paper: var(--color-elegant-950);
-        --color-paper-fg: var(--color-elegant-50);
-        --color-paper-heading: var(--color-elegant-100);
+        --color-paper-hover: var(--color-elegant-900);
+        --color-paper-fg: var(--color-elegant-200);
+        --color-paper-heading: var(--color-elegant-50);
 
-        --color-disabled: var(--color-paper);
-        --color-disabled-border: var(--color-tertiary-fg);
+        /* Interactive states */
+        --color-hover: var(--color-elegant-800);
+        --color-focus: var(--color-elegant-50);
+        --color-disabled: var(--color-elegant-900);
+        --color-disabled-border: var(--color-elegant-800);
 
-        --color-selection-bg: var(--color-elegant-400);
-        --color-selection-fg: var(--color-elegant-950);
+        /* Button gradient for dark mode */
+        --color-btn-gradient-from: var(--color-elegant-200);
+        --color-btn-gradient-to: var(--color-elegant-50);
+
+        --color-selection-bg: var(--color-elegant-50);
+        --color-selection-fg: var(--color-elegant-900);
     }
 }
 
 .theme-elegant ::selection {
-        background: var(--color-selection-bg);
-        color: var(--color-selection-fg);
-    }
+    background: var(--color-selection-bg);
+    color: var(--color-selection-fg);
+}

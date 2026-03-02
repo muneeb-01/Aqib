@@ -98,7 +98,7 @@ export function ScrollScaleCard({
 export function ScrollScaleCardWrapper() {
   return (
     <ScrollScaleCard>
-      <div className="w-[90%] h-[90vh] bg-(--color-paper) rounded-(--container-roundness) text-(--color-paper-fg) flex justify-center items-center">
+      <div className="w-[90%] h-[90vh] bg-gradient-to-b from-[var(--color-primary)] to-[var(--color-tertiary-fg)] rounded-(--container-roundness) text-(--color-paper-fg) flex justify-center items-center">
         <video
           src="/videos/0202.mp4"
           id="video"

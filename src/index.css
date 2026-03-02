@@ -4,12 +4,12 @@
   src: url("./assets/Fonts/NeueMontrealBold.woff2");
 }
 @font-face {
-  font-family: "montmedium";
-  src: url("./assets/Fonts/NordMedium.woff2");
+  font-family: "montitalic";
+  src: url("./assets/Fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf");
 }
 @font-face {
   font-family: "montregular";
-  src: url("./assets/Fonts/NordRegular.woff2");
+  src: url("./assets/Fonts/PlayfairDisplay-VariableFont_wght.ttf");
 }
 @font-face {
   font-family: "NeueMachina";
@@ -24,7 +24,7 @@
 @layer base {
   :root {
     --font-montbold: "montbold", sans-serif;
-    --font-montmedium: "montmedium", sans-serif;
+    --font-montitalic: "montitalic", sans-serif;
     --font-montregular: "montregular", sans-serif;
     --font-neue-machina: "NeueMachina", sans-serif;
     --color-info: var(--color-blue-600);
@@ -62,7 +62,7 @@
   @apply font-bold;
 }
 .font-montmedium {
-  font-family: var(--font-montmedium);
+  font-family: var(--font-montitalic);
   @apply font-medium;
 }
 .font-montregular {

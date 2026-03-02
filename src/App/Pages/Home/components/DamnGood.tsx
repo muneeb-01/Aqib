@@ -1,6 +1,6 @@
 export function DamnGood() {
   return (
-    <section className="min-h-screen clipContainer bg-gradient-to-b from-[#19181B] to-[#2A2A2A] relative w-full flex items-center justify-center z-10 ">
+    <section className="min-h-screen clipContainer bg-gradient-to-b from-[var(--color-primary)] to-[var(--color-tertiary-fg)] relative w-full flex items-center justify-center z-10 ">
       <div className="absolute z-10 grid grid-cols-2 gap-y-[20vh] gap-x-12 md:gap-y-72 sm:gap-x-[50vw] 2xl:gap-x-[40vw] place-items-center">
         <img
           src="/images/airplane.png"

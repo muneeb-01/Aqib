@@ -7,10 +7,10 @@ export function Testimonial() {
         {/* LEFT (Sticky Text) */}
         <div className="lg:sticky lg:top-[10%] self-start">
           <div className="px-4 sm:px-6 py-4 rounded">
-            <h2 className="craftr3 font-extrabold text-3xl sm:text-4xl lg:text-5xl tracking-tight text-left py-3">
+            <h2 className="font-montbold font-extrabold text-3xl sm:text-4xl lg:text-5xl tracking-tight text-left py-3">
               What Our <br className="hidden sm:flex" /> Customers Say
             </h2>
-            <p className="craftr3 font-light text-[var(--color-secondary)] text-left text-sm sm:text-base">
+            <p className="font-montregular font-light text-[var(--color-secondary)] text-left text-sm sm:text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Doloremque magni at pariatur eum vero repudiandae aliquid eligendi
               a architecto dolore rem reprehenderit ipsam tempore blanditiis
@@ -28,10 +28,10 @@ export function Testimonial() {
                 <FaRegUser className=" text-4xl md:text-6xl" />
               </div>
               <div className="flex-1">
-                <h2 className="craftr4 text-xl sm:text-2xl font-semibold">
+                <h2 className="font-montbold text-xl sm:text-2xl font-semibold">
                   Karl Banson
                 </h2>
-                <p className="text-sm sm:text-base">
+                <p className="text-sm font-montregular sm:text-base">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
                   nesciunt maiores, laboriosam rerum voluptatem quaerat facere
                   accusantium, culpa optio quia porro.

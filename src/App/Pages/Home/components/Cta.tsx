@@ -2,7 +2,7 @@ export function Cta() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden py-24 text-center"
+      className="relative overflow-hidden py-30 text-center"
     >
       {/* Radial Glow Background */}
       <div className="absolute pointer-events-none" />
@@ -17,7 +17,7 @@ export function Cta() {
           Let's craft a digital experience that stands out and converts.
         </p>
 
-        <button className="inline-block px-8 py-4 rounded-full bg-[var(--accent-color)] text-black font-medium text-lg hover:opacity-90 transition">
+        <button className="inline-block px-8 py-4 rounded-full font-medium bg-(--color-primary-fg) text-(--color-primary) text-lg hover:opacity-90 transition">
           Book a Free Discovery Call
         </button>
       </div>
