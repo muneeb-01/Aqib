@@ -6,6 +6,7 @@ import {
   Testimonial,
   Cta,
   BrandServices,
+  HorizontalSection
 } from "./components"
 import { Footer } from "../../common/components/Footer"
 
@@ -15,6 +16,7 @@ export function Home() {
       <Landing />
       <Offer />
       <ScrollScaleCardWrapper />
+      <HorizontalSection/>
       <Testimonial />
       <Marquee />
       <BrandServices />

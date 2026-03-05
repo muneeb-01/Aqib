@@ -6,3 +6,12 @@
 .clipContainer {
   clip-path: circle(var(--clip) at 50% 45%);
 }
+
+:root {
+  --clip-1: 5%;
+  --clipReact-1: 100%;
+  --clipReactRound-1: 0px;
+}
+.clipping {
+  clip-path: circle(var(--clip-1) at 50% 50%);
+}
