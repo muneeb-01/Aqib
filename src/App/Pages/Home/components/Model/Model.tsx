@@ -30,7 +30,7 @@ const Model = ({ isMobile }: { isMobile?: boolean }) => {
   const groupRef = useRef<any>(null)
   console.log(isMobile)
   return (
-    <group ref={groupRef} scale={24}>
+    <group ref={groupRef} >
       <Center>
         <primitive object={model.scene} />
       </Center>

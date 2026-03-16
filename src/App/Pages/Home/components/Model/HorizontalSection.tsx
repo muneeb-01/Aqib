@@ -141,8 +141,8 @@ export function HorizontalSection() {
           ref={clippingRef}
           className="absolute clipping inset-0 w-full h-full text-(--color-paper-fg) bg-(--color-paper) pointer-events-none"
         >
-          <div className="tooltips absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[75%] h-[75%] flex gap-[15rem]">
-            <div className="tooltip  flex-1 flex flex-col gap-[0.5rem]">
+          <div className="tooltips absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-[75%] md:h-[75%] h-[90%] w-[90%] flex md:gap-[5rem] flex-col md:flex-row lg:gap-[15rem]">
+            <div className="tooltip  flex-1 bg400 flex flex-col gap-[0.5rem]">
 
               <div className="title">
                 <h2 className="text-2xl font-montmedium">Built to last</h2>
@@ -155,9 +155,9 @@ export function HorizontalSection() {
                 </p>
               </div>
             </div>
-            <div className="tooltip flex-1 flex flex-col gap-[0.5rem] justify-end items-end">
+            <div className="tooltip flex-1 flex-col  gap-[0.5rem] justify-end items-end flex">
               <div className="title">
-                <h2 className="text-2xl font-montmedium">Built to last</h2>
+                <h2 className="text-2xl font-montmedium text-right ">Built to last</h2>
               </div>
               <div className="divider max-w-[420px] bg-(--color-paper) scale-x-0 relative w-full h-[1px] mt-[0.5rem]  origin-left"></div>
               <div className="description max-w-[400px]">
@@ -189,7 +189,7 @@ export function HorizontalSection() {
           <directionalLight position={[0, 15, 15]} intensity={10} />
 
           <Suspense fallback={<Loader />}>
-            <AnimatedModel progressRef={progressRef} />
+            <AnimatedModel isMobile={isMobile} progressRef={progressRef} />
           </Suspense>
           {!isMobile && <OrbitControls enableZoom={false} />}
         </Canvas>
@@ -200,7 +200,7 @@ export function HorizontalSection() {
 
 /* ---------------- MODEL ---------------- */
 
-function AnimatedModel({ progressRef }: { progressRef: any }) {
+function AnimatedModel({ isMobile, progressRef }: { isMobile?: boolean, progressRef: any }) {
   const model = useGLTF("/model.glb")
   const groupRef = useRef<any>(null)
   const axis = useMemo(() => {
@@ -220,7 +220,7 @@ function AnimatedModel({ progressRef }: { progressRef: any }) {
     groupRef.current.rotateOnAxis(axis, angle)
   })
   return (
-    <group ref={groupRef} scale={24}>
+    <group ref={groupRef} position={[0, 0, 0]} scale={isMobile ? 12 : 24}>
       <primitive object={model.scene} />
     </group>
   )
@@ -233,7 +233,7 @@ function Loader() {
 
   return (
     <Html center>
-      <div className="w-32 h-2  rounded-full overflow-hidden">
+      <div className="w-16 lg:w-32 h-2  rounded-full overflow-hidden">
         <div
           className="h-full bg-(--color-paper) text-(--color-paper) transition-all duration-300"
           style={{ width: `${progress}%` }}
