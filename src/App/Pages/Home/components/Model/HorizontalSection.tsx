@@ -13,7 +13,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import * as THREE from "three"
 
 gsap.registerPlugin(ScrollTrigger)
-useGLTF.preload("/model.glb")
+useGLTF.preload("/model.glb", true)
 
 export function HorizontalSection() {
   const sectionRef = useRef<HTMLDivElement | null>(null)
@@ -21,6 +21,19 @@ export function HorizontalSection() {
   const progressRef = useRef(0)
   const clippingRef = useRef<HTMLDivElement | null>(null)
   const [isMobile, setIsMobile] = useState(false)
+  const isMobileRef = useRef(false)
+  useEffect(() => {
+    const ro = new ResizeObserver((entries) => {
+      const width = entries[0]?.contentRect.width ?? window.innerWidth
+      const mobile = width < 768
+      if (mobile !== isMobileRef.current) {
+        isMobileRef.current = mobile
+        setIsMobile(mobile)
+      }
+    })
+    ro.observe(document.documentElement)
+    return () => ro.disconnect()
+  }, [])
 
   useEffect(() => {
     const handleResize = () => {
@@ -128,7 +141,7 @@ export function HorizontalSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full h-screen overflow-hidden"
+      className="relative w-full h-screen"
     >
       {/* Horizontal track */}
       <div ref={trackRef} className="flex h-full items-center gap-10 px-[40vw]">
@@ -183,7 +196,11 @@ export function HorizontalSection() {
             </div>
           </div>
         </div>
-        <Canvas camera={{ fov: 60, position: [0, 2, -50] }} dpr={[1, 2]}>
+        <Canvas camera={{ fov: 60, position: [0, 2, -50] }} dpr={[1, 2]} gl={{
+          antialias: true,
+          powerPreference: "high-performance",
+          alpha: true,
+        }}>
           <Environment preset="city" />
           <ambientLight intensity={5} />
           <directionalLight position={[0, 15, 15]} intensity={10} />
@@ -201,7 +218,7 @@ export function HorizontalSection() {
 /* ---------------- MODEL ---------------- */
 
 function AnimatedModel({ isMobile, progressRef }: { isMobile?: boolean, progressRef: any }) {
-  const model = useGLTF("/model.glb")
+  const model = useGLTF("https://cdn.jsdelivr.net/gh/muneeb-01/Aqib@main/public/model.glb")
   const groupRef = useRef<any>(null)
   const axis = useMemo(() => {
     const topPoint = new THREE.Vector3(0, 7, 0)

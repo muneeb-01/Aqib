@@ -1,19 +1,19 @@
 @import "tailwindcss";
 @font-face {
   font-family: "montbold";
-  src: url("./assets/Fonts/NeueMontrealBold.woff2");
+  src: url("https://cdn.jsdelivr.net/gh/muneeb-01/Aqib@main/src/assets/Fonts/NeueMontrealBold.woff2");
 }
 @font-face {
   font-family: "montitalic";
-  src: url("./assets/Fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf");
+  src: url("https://cdn.jsdelivr.net/gh/muneeb-01/Aqib@main/src/assets/Fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf");
 }
 @font-face {
   font-family: "montregular";
-  src: url("./assets/Fonts/PlayfairDisplay-VariableFont_wght.ttf");
+  src: url("https://cdn.jsdelivr.net/gh/muneeb-01/Aqib@main/src/assets/Fonts/PlayfairDisplay-VariableFont_wght.ttf");
 }
 @font-face {
   font-family: "NeueMachina";
-  src: url("./assets/Fonts/NeueMachina.ttf");
+  src: url("https://cdn.jsdelivr.net/gh/muneeb-01/Aqib@main/src/assets/Fonts/NeueMachina.ttf");
 }
 
 @import "./styles/themes/elegant.css";
