@@ -33,6 +33,7 @@ function useGsapScrollScale(
   useEffect(() => {
     const el = ref.current
     if (!el) return
+    console.log(document.getElementById("video"))
 
     // Set initial state
     gsap.set(el, {
@@ -81,7 +82,7 @@ export function ScrollScaleCard({
       className="w-full h-[120vh] "
     >
       <div
-
+      
         style={{
           willChange: "transform, opacity",
           transformOrigin: "center center",
