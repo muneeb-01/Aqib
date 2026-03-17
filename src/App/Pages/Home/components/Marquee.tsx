@@ -44,7 +44,6 @@ export function Marquee() {
     "row-right",
     "row-left",
     "row-right",
-    "row-left mobile-only",
   ]
 
   return (
@@ -65,15 +64,13 @@ export function Marquee() {
       <div className="marquee text-2xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl scale-100 absolute top-1/2 font-semibold font-NeueMachina left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%]">
         {directions.map((str, idx) => {
           const direction = str.split(" ")[0]
-          const isMobileOnly = str.split(" ")[1] === "mobile-only"
           return (
             <div
               key={idx}
-              className={`row ${direction} ${isMobileOnly ? "lg:hidden" : ""} ${
-                direction === "row-left"
-                  ? "-translate-x-full"
-                  : "translate-x-[17%] 2xl:translate-x-34"
-              } w-full py-2 flex flex-nowrap items-center gap-2 sm:gap-4 md:gap-6 lg:gap-8`}
+              className={`row ${direction} ${direction === "row-left"
+                ? "-translate-x-full"
+                : "translate-x-[17%] 2xl:translate-x-34"
+                } w-full py-2 flex flex-nowrap items-center gap-2 sm:gap-4 md:gap-6 lg:gap-8`}
             >
               {words.map((word, i) => (
                 <div
