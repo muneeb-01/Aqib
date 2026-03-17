@@ -13,7 +13,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import * as THREE from "three"
 
 gsap.registerPlugin(ScrollTrigger)
-useGLTF.preload("/model.glb")
+useGLTF.preload("https://cdn.jsdelivr.net/gh/muneeb-01/Aqib@main/public/model.glb", true)
 
 export function HorizontalSection() {
   const sectionRef = useRef<HTMLDivElement | null>(null)
@@ -201,7 +201,7 @@ export function HorizontalSection() {
 /* ---------------- MODEL ---------------- */
 
 function AnimatedModel({ isMobile, progressRef }: { isMobile?: boolean, progressRef: any }) {
-  const model = useGLTF("/model.glb")
+  const model = useGLTF("https://cdn.jsdelivr.net/gh/muneeb-01/Aqib@main/public/model.glb", true)
   const groupRef = useRef<any>(null)
   const axis = useMemo(() => {
     const topPoint = new THREE.Vector3(0, 7, 0)
