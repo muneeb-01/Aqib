@@ -32,7 +32,7 @@ export function HorizontalSection() {
 
     const totalWidth = track.scrollWidth
     const viewportWidth = window.innerWidth
-    const scrollDistance = totalWidth - viewportWidth - 100
+    const scrollDistance = Math.max(totalWidth - viewportWidth, 0) * (isMobile ? 3 : 2) // Reduce scroll distance on mobile for better UX
 
     const ctx = gsap.context(() => {
       gsap.to(track, {
@@ -42,7 +42,7 @@ export function HorizontalSection() {
           trigger: section,
           start: "top top",
           end: `+=${scrollDistance}`,
-          scrub: true,
+          scrub: 1.5,
           pin: true,
           onUpdate: (self) => {
             progressRef.current = self.progress
