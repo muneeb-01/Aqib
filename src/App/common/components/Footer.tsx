@@ -68,7 +68,7 @@ export function Footer() {
 
       {/* Bottom Section */}
       <div className="container mx-auto px-6 pt-8 border-t border-[var(--surface-border)] flex flex-col md:flex-row justify-between items-center text-sm  gap-4">
-        <p>&copy; 2026 Nexus Digital. All rights reserved.</p>
+        <p>&copy; 2026 Craftr-Studio. All rights reserved.</p>
 
         <div className="flex gap-8">
           <a href="#" className="hover:text-[var(--text-primary)] transition">

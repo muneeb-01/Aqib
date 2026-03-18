@@ -123,7 +123,7 @@ export function HorizontalSection() {
       ctx.revert()
       window.removeEventListener("resize", handleResize)
     }
-  }, [])
+  }, [isMobile])
 
   return (
     <section
@@ -183,7 +183,7 @@ export function HorizontalSection() {
             </div>
           </div>
         </div>
-        <Canvas camera={{ fov: 60, position: [0, 2, -50] }} dpr={[1, 2]}>
+        <Canvas orthographic={true} frameloop={`${isMobile ? "demand" : "always"}`} camera={{ fov: 60, position: [0, 2, -50] }} dpr={[1, window.devicePixelRatio]}>
           <Environment preset="city" />
           <ambientLight intensity={5} />
           <directionalLight position={[0, 15, 15]} intensity={10} />
@@ -214,13 +214,13 @@ function AnimatedModel({ isMobile, progressRef }: { isMobile?: boolean, progress
     if (!groupRef.current) return
     if (progressRef.current === undefined) return
     if (progressRef.current > 0.5) return
-    const angle = progressRef.current * Math.PI * 2
+    const angle = progressRef.current * Math.PI * 4
     groupRef.current.position.set(0, 0, 0)
     groupRef.current.rotation.set(0, 0, 0)
     groupRef.current.rotateOnAxis(axis, angle)
   })
   return (
-    <group ref={groupRef} position={[0, 0, 0]} scale={isMobile ? 12 : 24}>
+    <group ref={groupRef} position={[0, 0, 0]} scale={isMobile ? 210 : 350}>
       <primitive object={model.scene} />
     </group>
   )
