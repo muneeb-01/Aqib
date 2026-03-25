@@ -1,36 +1,36 @@
 export function DamnGood() {
   return (
     <section className="min-h-screen clipContainer bg-gradient-to-b from-[var(--color-primary)] to-[var(--color-tertiary-fg)] relative w-full flex items-center justify-center z-10 ">
-      <div className="absolute z-10 grid grid-cols-2 gap-y-[20vh] gap-x-12 md:gap-y-72 sm:gap-x-[50vw] 2xl:gap-x-[40vw] place-items-center">
+      <div className="absolute z-10 grid grid-cols-2 gap-y-[20vh] gap-x-12 md:gap-y-72 lg:gap-y-42 sm:gap-x-[50vw] 2xl:gap-x-[40vw] place-items-center">
         <img
           src="/images/airplane.webp"
           alt="Airplane"
-          className="w-40 md:w-48 lg:w-52 drop-shadow-2xl"
+          className="w-40 md:w-48 lg:w-42 xl:w-52 drop-shadow-2xl"
         />
 
         <img
           src="/images/dollar.webp"
           alt="Dollar"
-          className="w-36 md:w-44 lg:w-48 drop-shadow-2xl rotate-12"
+          className="w-36 md:w-44 lg:w-42 xl:w-48 drop-shadow-2xl rotate-12"
         />
 
         <img
           src="/images/hand.webp"
           alt="Card"
-          className="w-40 md:w-48 lg:w-52 drop-shadow-2xl -rotate-6"
+          className="w-40 md:w-48 lg:w-42 xl:w-52 drop-shadow-2xl -rotate-6"
         />
 
         <img
           src="/images/resign.webp"
           alt="Globe"
-          className="w-38 md:w-46 lg:w-50 drop-shadow-2xl"
+          className="w-38 md:w-46 lg:w-42 xl:w-50 drop-shadow-2xl"
         />
       </div>
 
-      <div className="relative space-y-4 w-full max-w-[68em] px-8">
+      <div className="relative space-y-4 w-full lg:max-w-[50em] max-w-[68em] px-8">
         <svg
           viewBox="0 0 900 180"
-          className="text-4xl"
+          className=""
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
         >

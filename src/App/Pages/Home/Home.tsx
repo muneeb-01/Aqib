@@ -1,6 +1,5 @@
 import {
   Landing,
-  Marquee,
   Offer,
   ScrollScaleCardWrapper,
   Testimonial,
@@ -16,9 +15,8 @@ export function Home() {
       <Landing />
       <Offer />
       <ScrollScaleCardWrapper />
-      <HorizontalSection/>
+      <HorizontalSection />
       <Testimonial />
-      <Marquee />
       <BrandServices />
       <Cta />
       <Footer />

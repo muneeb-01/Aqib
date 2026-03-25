@@ -54,14 +54,14 @@ export function Marquee() {
     >
       {/* Top Tagline */}
       <div className="text-center font-poppins mt-20 sm:mt-24">
-        <h1 className="text-base sm:text-lg lg:text-xl 2xl:text-3xl font-medium tracking-tight whitespace-nowrap">
+        <h1 className="text-base sm:text-base 2xl:text-3xl font-medium tracking-tight whitespace-nowrap">
           Transforming Spaces with Innovative Design <br /> and Creative
           Solutions
         </h1>
       </div>
 
       {/* Animated Marquee */}
-      <div className="marquee text-2xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl scale-100 absolute top-1/2 font-semibold font-NeueMachina left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%]">
+      <div className="marquee text-2xl sm:text-4xl md:text-4xl 2xl:text-7xl scale-100 absolute top-1/2 font-semibold font-NeueMachina left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%]">
         {directions.map((str, idx) => {
           const direction = str.split(" ")[0]
           return (
@@ -79,7 +79,7 @@ export function Marquee() {
                 >
                   <h1 className="whitespace-nowrap">{word}</h1>
                   {i < words.length - 1 && (
-                    <div className="circle w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 bg-(--color-paper) rounded-full" />
+                    <div className="circle w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 2xl:w-10 2xl:h-10 bg-(--color-paper) rounded-full" />
                   )}
                 </div>
               ))}
@@ -91,7 +91,7 @@ export function Marquee() {
       {/* Bottom Tag */}
       <div className="absolute text-sm font-medium font-poppins bottom-[10%] left-[8%]">
         <ul>
-          <li className="text-sm sm:text-base fs1">
+          <li className="text-sm sm:text-base lg:text-[0.7rem] xl:text-xl  fs1">
             {" "}
             {new Date().getFullYear() - 2018} Years Of Experience
           </li>
