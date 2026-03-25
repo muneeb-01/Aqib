@@ -27,7 +27,7 @@ export function DamnGood() {
         />
       </div>
 
-      <div className="relative space-y-4 w-full lg:max-w-[50em] max-w-[68em] px-8">
+      <div className="relative space-y-4 w-full lg:max-w-[50em] xl:max-w-[68em] px-8">
         <svg
           viewBox="0 0 900 180"
           className=""
