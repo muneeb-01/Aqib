@@ -28,15 +28,15 @@ export function Marquee() {
   }, [])
 
   const words = [
-    "inspiration",
-    "creativity",
-    "elegance",
-    "design",
-    "vision",
-    "harmony",
-    "transformation",
+    "precision",
+    "solidworks",
+    "autocad",
+    "engineering",
+    "drafting",
+    "modeling",
+    "rendering",
     "innovation",
-    "ambiance",
+    "assembly",
   ]
 
   const directions = [
@@ -55,8 +55,8 @@ export function Marquee() {
       {/* Top Tagline */}
       <div className="text-center font-poppins mt-20 sm:mt-24">
         <h1 className="text-base sm:text-base 2xl:text-3xl font-medium tracking-tight whitespace-nowrap">
-          Transforming Spaces with Innovative Design <br /> and Creative
-          Solutions
+          Transforming Concepts with Precision CAD <br /> and Advanced
+          Engineering Solutions
         </h1>
       </div>
 

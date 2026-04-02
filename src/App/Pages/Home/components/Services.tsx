@@ -10,44 +10,34 @@ interface ServiceItem {
 /* ─── Data ───────────────────────────────────────────────── */
 const services: ServiceItem[] = [
   {
-    title: "Visual Identity Systems",
+    title: "AutoCAD Drafting & Detailing",
     description:
-      "Design cohesive identity systems — logos, colour palettes, typography, and iconography — that give your brand a distinctive and ownable visual language.",
-    tags: ["Logo Design", "Colour Palettes", "Typography", "Icon Systems"],
+      "Precise 2D layouts, architectural floor plans, and technical schematics designed for production clarity and municipal approval.",
+    tags: ["2D Layouts", "Floor Plans", "Schematics", "Technical Drawings"],
   },
   {
-    title: "Editorial & Print Design",
+    title: "SolidWorks 3D Modeling",
     description:
-      "Produce beautifully crafted print collateral — magazines, lookbooks, brochures and posters — that command attention and communicate with clarity on every page.",
-    tags: ["Magazines", "Lookbooks", "Posters", "Brochures"],
+      "Advanced parametric modeling, assembly design, and mechanical engineering solutions for complex products and machinery.",
+    tags: ["Parametric Modeling", "Assemblies", "Simulation", "Prototypes"],
   },
   {
-    title: "Packaging Design",
+    title: "Photorealistic 3D Rendering",
     description:
-      "Create packaging that stands out on shelf and in hand. From structural dielines to surface graphics, we design packaging that earns its place in the world.",
-    tags: [
-      "Structural Design",
-      "Surface Graphics",
-      "Retail Packaging",
-      "Labels",
-    ],
+      "High-fidelity visualizations that bring your engineering concepts to life for investor presentations and marketing reviews.",
+    tags: ["Product Rendering", "Animation", "Visualizations", "V-Ray"],
   },
   {
-    title: "Motion & Digital Graphics",
+    title: "Mechanical Design & Prototyping",
     description:
-      "Bring your visual identity to life with animated assets, social content, and digital graphics engineered for every screen and format.",
-    tags: ["Animation", "Social Content", "Digital Ads", "UI Graphics"],
+      "End-to-end product development focusing on manufacturing feasibility (DFM), cost reduction, and design optimization.",
+    tags: ["Product Dev", "Prototyping", "Design for Mfg", "Feasibility"],
   },
   {
-    title: "Art Direction",
+    title: "Technical Documentation & BOM",
     description:
-      "Guide photoshoots, video productions, and campaigns with a sharp creative vision — ensuring every visual output stays true to your brand world.",
-    tags: [
-      "Photography Direction",
-      "Campaign Concepts",
-      "Styling",
-      "Retouching",
-    ],
+      "Detailed Bill of Materials (BOM), tolerance analysis, and manufacturing specifications for factory-ready documentation.",
+    tags: ["BOM", "Tolerance Analysis", "ISO Standards", "Specs"],
   },
 ]
 
@@ -309,9 +299,9 @@ export function BrandServices() {
                     maxWidth: isMobile ? "100%" : "280px",
                   }}
                 >
-                  We partner with graphic designers and creative studios to
-                  build brand systems that are both beautiful and bulletproof —
-                  designed to scale.
+                  We partner with engineers, architects, and manufacturers to
+                  build high-precision CAD systems that are technically sound —
+                  designed for production.
                 </p>
               </div>
 

@@ -145,25 +145,25 @@ export function HorizontalSection() {
             <div className="tooltip  flex-1 bg400 flex flex-col gap-[0.5rem]">
 
               <div className="title">
-                <h2 className="text-2xl font-montmedium">Built to last</h2>
+                <h2 className="text-2xl font-montmedium">Precision Engineering</h2>
               </div>
               <div className="divider max-w-[420px] bg-(--color-paper) scale-x-0 relative w-full h-[1px] mt-[0.5rem]  origin-right"></div>
               <div className="description max-w-[400px]">
                 <p>
-                  Designed to match your pace, GRND runs all week on a single
-                  charge. No interruptions, no slowing down.
+                  Every component is modeled with manufacturing tolerances in mind, 
+                  ensuring seamless assembly and production readiness.
                 </p>
               </div>
             </div>
             <div className="tooltip flex-1 flex-col  gap-[0.5rem] justify-end items-end flex">
               <div className="title">
-                <h2 className="text-2xl font-montmedium text-right ">Built to last</h2>
+                <h2 className="text-2xl font-montmedium text-right ">Complex Assemblies</h2>
               </div>
               <div className="divider max-w-[420px] bg-(--color-paper) scale-x-0 relative w-full h-[1px] mt-[0.5rem]  origin-left"></div>
               <div className="description max-w-[400px]">
                 <p>
-                  Designed to match your pace, GRND runs all week on a single
-                  charge. No interruptions, no slowing down.
+                  Expert management of large-scale assemblies with SolidWorks performance 
+                  optimization for smooth design workflows.
                 </p>
               </div>
             </div>
@@ -178,7 +178,7 @@ export function HorizontalSection() {
           >
             <div className="flex justify-center items-center gap-2 sm:gap-4 md:gap-6 lg:gap-8">
               <h1 className="whitespace-nowrap model-row font-montbold text-8xl tracking-tight lg:text-[19em] ">
-                ITS ALL START FROM
+                PRECISION STARTS HERE
               </h1>
             </div>
           </div>

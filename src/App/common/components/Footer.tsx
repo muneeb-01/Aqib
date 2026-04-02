@@ -7,10 +7,10 @@ export function Footer() {
         {/* Brand */}
         <div>
           <a href="#" className="text-2xl font-semibold">
-            Nexus<span className="">.</span>
+            PrecisionCAD<span className="">.</span>
           </a>
           <p className="mt-4 max-w-[250px] ">
-            High-end digital solutions for modern brands.
+            High-precision CAD drafting and 3D modeling services for engineering and manufacturing.
           </p>
         </div>
 

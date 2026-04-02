@@ -6,23 +6,23 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 const data = [
   {
     icon: <FaTools className="text-3xl" />,
-    title: "Cost-Effective Solutions",
-    desc: "We deliver high-performance engineering upgrades at a fraction of OEM replacement costs, saving clients up to 90%.",
+    title: "Unrivaled Precision",
+    desc: "We apply a zero-tolerance approach to 2D drafting and 3D modeling, ensuring every component meets exact specifications.",
   },
   {
     icon: <FaChartLine className="text-3xl" />,
     title: "Performance Optimization",
-    desc: "Enhance your system efficiency and productivity with precision-engineered upgrades tailored to your needs.",
+    desc: "Enhance your system efficiency with precision-engineered 3D assemblies optimized for performance and reliability.",
   },
   {
     icon: <FaShieldAlt className="text-3xl" />,
-    title: "Reliable Quality",
-    desc: "Every upgrade is tested to ensure consistent performance, reliability, and long-term durability.",
+    title: "Industry Compliance",
+    desc: "Every design is checked against international manufacturing standards including ISO, ANSI, and DIN specifications.",
   },
   {
     icon: <FaClock className="text-3xl" />,
-    title: "Quick Turnaround",
-    desc: "Our streamlined engineering process minimizes downtime and ensures timely project delivery.",
+    title: "Rapid Project Delivery",
+    desc: "Our streamlined CAD workflow minimizes lead times and ensures your project stays on schedule from draft to production.",
   },
 ]
 
@@ -56,8 +56,8 @@ export function Offer() {
       <div className="text-4xl gap-[14vh] py-[12vh] flex flex-col justify-evenly items-center w-full">
         <div>
           <p className="text-center px-6 font-bold sm:text-base lg:text-2xl xl:text-3xl">
-            Collaborate with brands and agencies{" "}
-            <br className="sm:flex hidden" /> to create impactful results.
+            We collaborate with engineers and manufacturers{" "}
+            <br className="sm:flex hidden" /> to deliver precision-driven CAD results.
           </p>
         </div>
         <div className="w-full flex justify-center items-center relative">

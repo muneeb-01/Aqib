@@ -10,15 +10,16 @@ export function Cta() {
       {/* Content */}
       <div className="relative z-10 max-w-3xl mx-auto px-6">
         <h2 className="text-3xl font-montbold md:text-4xl font-semibold mb-6">
-          Ready to scale your digital presence?
+          Ready to Bring Your Design to Life?
         </h2>
 
         <p className="text-[var(--text-secondary)] text-lg mb-10">
-          Let's craft a digital experience that stands out and converts.
+          From simple 2D drafts to complex 3D assemblies, we provide the 
+          technical precision your project requires.
         </p>
 
         <button className="inline-block px-8 py-4 rounded-full font-medium bg-(--color-primary-fg) text-(--color-primary) text-lg hover:opacity-90 transition">
-          Book a Free Discovery Call
+          Request a Free Technical Consultation
         </button>
       </div>
     </section>

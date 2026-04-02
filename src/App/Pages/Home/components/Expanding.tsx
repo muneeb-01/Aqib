@@ -103,11 +103,11 @@ export function Marquee() {
           id="marquee-1"
         >
           <div className="marquee w-full h-full absolute top-1/2 -translate-y-1/2 flex gap-4 md:-left-[15%] -left-[25%]">
-            <MarqueeItem imgUrl={img1} text="DESIGN" />
-            <MarqueeItem imgUrl={img1} text="UNIQUE" isText />
-            <MarqueeItem imgUrl={img1} text="AESTHETICS" />
+            <MarqueeItem imgUrl={img1} text="DRAFT" />
+            <MarqueeItem imgUrl={img1} text="BUILD" isText />
+            <MarqueeItem imgUrl={img1} text="PRECISION" />
             <MarqueeItem imgUrl={img1} text="EXPERT" />
-            <MarqueeItem imgUrl={img1} text="CREATIVE" />
+            <MarqueeItem imgUrl={img1} text="ENGINEER" />
           </div>
         </div>
 
@@ -118,11 +118,11 @@ export function Marquee() {
         >
           {/* Note: max-[900px]:-left-[35%] is applied via GSAP startX/endX logic to ensure smooth animation start/end points */}
           <div className="marquee w-full h-full absolute top-1/2 right-1/3  sm:left-0 -10 -translate-y-1/2 flex gap-4 md:left[-15%]">
-            <MarqueeItem imgUrl={img1} text="BUILD" />
-            <MarqueeItem imgUrl={img1} text="FLUID" />
+            <MarqueeItem imgUrl={img1} text="SOLIDWORKS" />
+            <MarqueeItem imgUrl={img1} text="AUTOCAD" />
             <MarqueeItem imgUrl={img1} text="MODERN" isText />
-            <MarqueeItem imgUrl={img1} text="INTERACTIVE" />
-            <MarqueeItem imgUrl={img1} text="CODE" />
+            <MarqueeItem imgUrl={img1} text="SIMULATION" />
+            <MarqueeItem imgUrl={img1} text="ASSEMBLY" />
           </div>
         </div>
 
@@ -132,11 +132,11 @@ export function Marquee() {
           id="marquee-3"
         >
           <div className="marquee w-full h-full absolute top-1/2 -translate-y-1/2 flex gap-4 md:-left-[15%] -left-[22%]">
-            <MarqueeItem imgUrl={img1} text="GSAP" />
+            <MarqueeItem imgUrl={img1} text="BOM" />
             <MarqueeItem imgUrl={img1} text="DESIGN" isText />
             <MarqueeItem imgUrl={img1} text="DYNAMIC" />
-            <MarqueeItem imgUrl={img1} text="REACT" />
-            <MarqueeItem imgUrl={img1} text="DESIGN" />
+            <MarqueeItem imgUrl={img1} text="RENDER" />
+            <MarqueeItem imgUrl={img1} text="LAYOUT" />
           </div>
         </div>
       </section>

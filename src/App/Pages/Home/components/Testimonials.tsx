@@ -3,17 +3,17 @@ import { FaQuoteRight, FaRegUser } from "react-icons/fa"
 const testimonials = [
   {
     name: "Karl Banson",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nesciunt maiores, laboriosam rerum voluptatem quaerat facere accusantium, culpa optio quia porro.",
+    text: "Their SolidWorks modeling saved us weeks in the prototyping phase. The assemblies were perfectly optimized and ready for simulation.",
     align: "end",
   },
   {
     name: "Sarah Lee",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nesciunt maiores, laboriosam rerum voluptatem quaerat facere accusantium, culpa optio quia porro.",
+    text: "The AutoCAD drafting was flawless, passing every municipal check without a single revision. Professional, precise, and highly recommended.",
     align: "start",
   },
   {
     name: "Mark Rivera",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nesciunt maiores, laboriosam rerum voluptatem quaerat facere accusantium, culpa optio quia porro.",
+    text: "The best CAD partner we've ever collaborated with for complex mechanical parts. They truly understand manufacturing constraints.",
     align: "end",
   },
 ]
@@ -29,9 +29,9 @@ export function Testimonial() {
             What Our <br className="hidden sm:block" /> Customers Say
           </h2>
           <p className="mt-4 font-light text-sm sm:text-base lg:text-[0.9rem] text-[var(--color-secondary)] leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Doloremque magni at pariatur eum vero repudiandae aliquid eligendi
-            a architecto dolore rem reprehenderit ipsam tempore blanditiis.
+            We take pride in delivering technical excellence. Here is what our 
+            partners in engineering and manufacturing have to say about our CAD 
+            and design services.
           </p>
         </div>
 

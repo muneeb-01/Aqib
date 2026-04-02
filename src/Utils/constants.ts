@@ -1,18 +1,20 @@
 export const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "/about" },
+  { name: "About", href: "#about" },
   {
-    name: "Our Services",
+    name: "Services",
     dropdown: [
-      { name: "Web Development", href: "/services/web" },
-      { name: "App Development", href: "/services/app" },
+      { name: "AutoCAD Drafting", href: "#services" },
+      { name: "SolidWorks Modeling", href: "#services" },
+      { name: "3D Rendering", href: "#services" },
     ],
   },
   {
-    name: "Projects",
-    dropdown: [
-      { name: "E-Commerce", href: "/projects/ecommerce" },
-      { name: "Portfolio", href: "/projects/portfolio" },
-    ],
+    name: "Portfolio",
+    href: "#portfolio",
+  },
+  {
+    name: "Contact",
+    href: "#contact",
   },
 ]
